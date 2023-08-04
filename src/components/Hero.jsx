@@ -1,49 +1,56 @@
-import { motion } from "framer-motion";
 
+import { useEffect } from "react";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { HiArrowNarrowRight } from "react-icons/hi"
 
 const Hero = () => {
+
+  useEffect(() => {
+
+    function carousel() {
+      const x = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000);
+    }
+
+    let myIndex = 0;
+    carousel();
+
+  }, [])
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      <div>
+        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s1.jpg" />
+        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s2.jpg" />
+        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s2.jpg" />
+
+      </div>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto px-0 py-16 flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+        <div className="w-2/3">
+          <h6 className="underline underline-offset-1 text-orange-300 mb-12">ARCHITECTURE COMPANY</h6>
+          <h1 className={`${styles.heroHeadText} text-white  mb-12`}>
+            Modern Building With High-Aesthetics.
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
+
+          <button className="bg-transparent border-solid border-2 border-black px-8 py-4">
+            <a href="#portfolio" className="underline underline-offset-1 flex items-center gap-4  ">VIEW PROJECT <HiArrowNarrowRight /></a>
+          </button>
         </div>
       </div>
 
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
-      </div>
     </section>
   );
 };

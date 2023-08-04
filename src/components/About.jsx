@@ -1,13 +1,12 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
 
-import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+export const ServiceCard = ({ index, title, icon, desc }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -35,28 +34,36 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+const ProjectCard = ({ description, imgUrl, title, navigate }) => {
+  return (
+    <div className="proj-imgbx w-80 border border-black rounded-none">
+      <img src={imgUrl} alt={title + imgUrl} className="p-12" />
+      <div className="proj-txtx">
+        <h4>{title}</h4>
+        <span>{description}</span>
+      </div>
+    </div>
+  );
+};
+
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h6 className="text-orange-300">SERVICES WE DO</h6>
+        <h1 className="text-4xl text-white">Our Highlighted Services For Architecture Design.</h1>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-20'>
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ProjectCard description={service.desc} imgUrl={service.icon} title={service.title} key={service.title} />
         ))}
       </div>
     </>

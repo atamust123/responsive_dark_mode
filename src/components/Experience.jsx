@@ -12,7 +12,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+export const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -33,7 +33,7 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <a target="_blank" href="https://atamust123.github.io/portfolio/" className='text-white text-[24px] font-bold underline'>{experience.title}</a>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
@@ -52,6 +52,7 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      <img src={experience.img} className="p-6" />
     </VerticalTimelineElement>
   );
 };
@@ -59,13 +60,12 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+      <motion.div variants={textVariant()} id="portfolio">
+        <h6 className="my-6 text-center text-orange-300">PORTFOLIO</h6>
+        <h1 className={`text-4xl text-white  mb-6 text-center`}>
           Work Experience.
-        </h2>
+        </h1>
+        <p className="text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
