@@ -1,1 +1,1 @@
-3D Responsive website template
+Static-responsive estate agent website. Tailwind was used.
