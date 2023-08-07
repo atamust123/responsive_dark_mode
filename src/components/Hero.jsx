@@ -26,9 +26,9 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div>
-        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s1.jpg" />
-        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s2.jpg" />
-        <img className="mySlides animate-fading h-screen w-full" src="/public/img/s2.jpg" />
+        <img className="mySlides animate-fading h-screen w-full" src="./public/img/s1.jpg" />
+        <img className="mySlides animate-fading h-screen w-full" src="./public/img/s2.jpg" />
+        <img className="mySlides animate-fading h-screen w-full" src="./public/img/s2.jpg" />
 
       </div>
       <div

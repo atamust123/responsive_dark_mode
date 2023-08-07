@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="flex p-16">
       <div className="w-1/2">
-        <img src={"/public/img/arko.png"} alt="logo" className="w-36 h-12 mb-4" />
+        <img src={"./public/img/arko.png"} alt="logo" className="w-36 h-12 mb-4" />
         <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
         <div className="flex gap-3 mt-4">
           <AiFillInstagram size={"24"} className="text-gray-400 cursor-pointer  hover:opacity-40" />

@@ -18,7 +18,7 @@ const ArchitectureCompany = () => {
         <div className="flex mx-auto relative py-16 px-4" id="about-us">
             <div className="w-4/6">
 
-                <img src="/img/s4.jpg" className="m-auto" style={{ maxWidth: "90%" }} />
+                <img src="./img/s4.jpg" className="m-auto" style={{ maxWidth: "90%" }} />
                 <div className="flex justify-evenly m-auto pt-4">
                     <div >
                         <h1 className={`text-4xl text-white`}>
@@ -67,7 +67,7 @@ const ArchitectureCompany = () => {
                             <div className='flex items-center w-full h-full gap-4'>
                                 <img
                                     style={profileStyle}
-                                    src={"/public/img/cv.jpeg"}
+                                    src={"./public/img/cv.jpeg"}
                                     alt={"experience.company_name"}
                                     className='object-contain'
                                 />

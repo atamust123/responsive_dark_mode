@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { styles } from "../styles";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -40,10 +40,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={"/public/img/arko.png"} alt='logo' className='w-36 h-12' />
-          {/* <p className='text-white text-[18px] font-bold cursor-pointer flex py-4' >
-            Arko. &nbsp;
-          </p> */}
+          <img src={"./public/img/arko.png"} alt='logo' className='w-36 h-12' />
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

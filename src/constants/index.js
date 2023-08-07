@@ -1,28 +1,22 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
   css,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  jobit,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  starbucks,
+  tailwind,
+  tesla,
   threejs,
+  tripguide,
+  typescript,
 } from "../assets";
 
 export const navLinks = [
@@ -43,17 +37,17 @@ export const navLinks = [
 const services = [
   {
     title: "PLANNING",
-    icon: "/public/img/p1.png",
+    icon: "./public/img/p1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "CONSULTING",
-    icon: "/public/img/p2.png",
+    icon: "./public/img/p2.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "ARCHITECTURE",
-    icon: "/public/img/p3.png",
+    icon: "./public/img/p3.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
 ];
@@ -123,7 +117,7 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
     ],
-    img: "/public/img/s1.jpg",
+    img: "./public/img/s1.jpg",
   },
   {
     title: "Melbourne House",
@@ -135,7 +129,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "/public/img/s2.jpg",
+    img: "./public/img/s2.jpg",
   },
   {
     title: "Berlins House",
@@ -149,7 +143,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "/public/img/s4.jpg",
+    img: "./public/img/s4.jpg",
   },
 ];
 
@@ -199,7 +193,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/public/img/j1.jpg",
+    image: "./public/img/j1.jpg",
     source_code_link: "https://github.com/",
   },
   {
@@ -221,7 +215,7 @@ const projects = [
       },
     ],
     image: jobit,
-    image: "/public/img/j2.jpg",
+    image: "./public/img/j2.jpg",
     source_code_link: "https://github.com/",
   },
   {
@@ -243,9 +237,9 @@ const projects = [
       },
     ],
     image: tripguide,
-    image: "/public/img/j3.jpg",
+    image: "./public/img/j3.jpg",
     source_code_link: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
