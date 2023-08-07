@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-neutral-600" : "bg-transparent"
         }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl'>
@@ -40,7 +40,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={"./public/img/arko.png"} alt='logo' className='w-36 h-12' />
+          <img src={"./img/adesa.png"} alt='logo' className='w-36 h-12' />
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

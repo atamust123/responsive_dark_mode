@@ -58,7 +58,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
+        The Single address of superior quality and trust. Structural steel has a life of 150 years. It is handed down from generation to generation.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-20'>

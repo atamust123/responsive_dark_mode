@@ -56,7 +56,7 @@ const ArchitectureCompany = () => {
                     We Have 20 Years Of Experience In This Field.
                 </h1>
 
-                <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
+                <p className="text-gray-400">With the understanding of being a reliable and given team with our experienced technical staff; We provide services in accordance with country and world standards without compromising the principles of timeliness along with customer satisfaction and quality.</p>
 
                 <div className="absolute bg-black p-8 bottom-0" style={style}>
                     <div>
@@ -67,7 +67,7 @@ const ArchitectureCompany = () => {
                             <div className='flex items-center w-full h-full gap-4'>
                                 <img
                                     style={profileStyle}
-                                    src={"./public/img/cv.jpeg"}
+                                    src={"./img/cv.jpeg"}
                                     alt={"experience.company_name"}
                                     className='object-contain'
                                 />

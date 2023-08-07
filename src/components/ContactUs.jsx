@@ -4,8 +4,8 @@ const ContactUs = () => {
   return (
     <div className="flex p-16">
       <div className="w-1/2">
-        <img src={"./public/img/arko.png"} alt="logo" className="w-36 h-12 mb-4" />
-        <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
+        <img src={"./img/adesa.png"} alt="logo" className="w-36 h-12 mb-4" />
+        <p className="text-gray-400">Working on the basis of customer satisfaction, technical and administrative personnel offer fast and quality solutions in line with customer needs.</p>
         <div className="flex gap-3 mt-4">
           <AiFillInstagram size={"24"} className="text-gray-400 cursor-pointer  hover:opacity-40" />
           <AiFillYoutube size={"24"} className="text-gray-400 cursor-pointer hover:opacity-40" />
@@ -29,10 +29,9 @@ const ContactUs = () => {
           <h6 className="text-end underline underline-offset-1 text-orange-300">CONTACT US</h6>
 
           <ul className="text-end">
-            <li className="mt-4">+123-456-7890</li>
-            <li className="mt-4 w-1/2 ml-auto">99 Roving St.,
-              Big City, PKU 23456</li>
-            <li className="mt-4">hello.awesome@site.com</li>
+            <li className="mt-4"><a href="tel:+90 549 505 19 90">+90 549 505 19 90</a></li>
+            <li className="mt-4 w-full ml-auto">Demirtaş mahallesi İnönü Caddesi No:143/1 Bursa/Osmangazi</li>
+            <li className="mt-4"><a href="mailto:info@adesahome.com">info@adesahome.com</a></li>
           </ul>
         </div>
       </div>

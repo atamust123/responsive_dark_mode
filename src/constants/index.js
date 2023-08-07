@@ -5,7 +5,6 @@ import {
   git,
   html,
   javascript,
-  jobit,
   mongodb,
   nodejs,
   reactjs,
@@ -15,7 +14,6 @@ import {
   tailwind,
   tesla,
   threejs,
-  tripguide,
   typescript,
 } from "../assets";
 
@@ -37,17 +35,17 @@ export const navLinks = [
 const services = [
   {
     title: "PLANNING",
-    icon: "./public/img/p1.png",
+    icon: "./img/p1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "CONSULTING",
-    icon: "./public/img/p2.png",
+    icon: "./img/p2.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "ARCHITECTURE",
-    icon: "./public/img/p3.png",
+    icon: "./img/p3.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
 ];
@@ -117,7 +115,7 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
     ],
-    img: "./public/img/s1.jpg",
+    img: "./img/s1.jpg",
   },
   {
     title: "Melbourne House",
@@ -129,7 +127,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "./public/img/s2.jpg",
+    img: "./img/s2.jpg",
   },
   {
     title: "Berlins House",
@@ -143,7 +141,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "./public/img/s4.jpg",
+    img: "./img/s4.jpg",
   },
 ];
 
@@ -176,14 +174,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Is Architecture A Good Career In 2022?",
+    name: "How long is the life of Adesa Home Wood?",
     description:
-      "Consequat nisl vel pretium lectus quam id leo in. Lorem donec massa sapien faucibus et molestie ac. Odio…",
+      "Wooden Houses have become popular in recent years because they are made of materials that create a natural and warm atmosphere. However, there are many different opinions about the useful life of these houses. In general, the service life of wooden houses can last more than 50 years. However, this lifetime may change according to natural disasters, climatic conditions and factors that require care.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "wooden",
+        color: "text-yellow-600",
       },
+      {
+        name: "lifetime",
+        color: "text-cyan-700",
+      },
+    ],
+    image: "./img/s5.jpg",
+  },
+  {
+    name: "Does the wooden house rot?",
+    description:
+      "There is a rumor circulating that wooden houses will rot. Wood fungi are particularly harmful to wooden houses and cause the structure to rot. For this reason, exterior cleaning should be done regularly in these areas, and if necessary, it should be done in spraying and coating.",
+    tags: [
       {
         name: "architecture",
         color: "green-text-gradient",
@@ -193,53 +203,103 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "./public/img/j1.jpg",
-    source_code_link: "https://github.com/",
+    image: "./img/rotten.jpg",
   },
   {
-    name: "Unfinished Constructions In LA (Progress)",
+    name: "Are tree houses earthquake resistant?",
     description:
-      "Odio aenean sed adipiscing diam donec adipiscing tristique. Eu turpis egestas pretium aenean pharetra magna ac. Id semper…",
+      "One of the most advantageous aspects of wooden houses is that they are resistant to earthquakes. This feature is very important in our country, which is located in the earthquake zone. Since wood is a light but strong material, it is more difficult to demolish in an earthquake.",
     tags: [
       {
-        name: "engineering",
-        color: "blue-text-gradient",
+        name: "earthquake",
+        color: "text-blue-500",
       },
       {
         name: "architecture",
         color: "green-text-gradient",
       },
-      {
-        name: "design",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    image: "./public/img/j2.jpg",
-    source_code_link: "https://github.com/",
+    image: "./img/j1.jpg",
   },
   {
-    name: "How We Built Auston Villa In Melbourne",
+    name: "How is tree house maintenance?",
     description:
-      "Odio aenean sed adipiscing diam donec adipiscing tristique. Eu turpis egestas pretium aenean pharetra magna ac. Id semper…",
+      "In order to do monthly maintenance in the wooden house, you need to take precautions against the formation of dust and mold on the wooden surface. After wiping the wooden surface with a slightly damp cloth, go over the wiped surface again with a dry cloth. In case of resin formation on the wood, you must have it cleaned. Window joinery and doors are also mostly made of wood. Over time, the doors may swell or the window may have airtightness problems. If you encounter these problems, you need to have them repaired immediately.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "engineering",
+        name: "architecture",
         color: "green-text-gradient",
       },
       {
-        name: "work",
+        name: "engineering",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    image: "./public/img/j3.jpg",
-    source_code_link: "https://github.com/",
+    image: "./img/j2.jpg",
   },
+  // {
+  //   name: "Is Architecture A Good Career In 2022?",
+  //   description:
+  //     "Consequat nisl vel pretium lectus quam id leo in. Lorem donec massa sapien faucibus et molestie ac. Odio…",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "architecture",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "engineering",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: "./img/j1.jpg",
+  //   source_code_link: "https://github.com/",
+  // },
+  // {
+  //   name: "Unfinished Constructions In LA (Progress)",
+  //   description:
+  //     "Odio aenean sed adipiscing diam donec adipiscing tristique. Eu turpis egestas pretium aenean pharetra magna ac. Id semper…",
+  //   tags: [
+  //     {
+  //       name: "engineering",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "architecture",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "design",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: "./img/j2.jpg",
+  //   source_code_link: "https://github.com/",
+  // },
+  // {
+  //   name: "How We Built Auston Villa In Melbourne",
+  //   description:
+  //     "Odio aenean sed adipiscing diam donec adipiscing tristique. Eu turpis egestas pretium aenean pharetra magna ac. Id semper…",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "engineering",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "work",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: "./img/j3.jpg",
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 export { experiences, projects, services, technologies, testimonials };

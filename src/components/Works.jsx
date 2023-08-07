@@ -72,12 +72,11 @@ const Works = () => {
         <div><h6 className="underline underline-offset-1 text-orange-300 mb-6">DIRECT FROM THE BLOG POSTS</h6>
 
           <h1 className={`text-4xl text-white  mb-6`}>
-            Checkout Our Latest News And Articles
+            FREQUENTLY ASKED QUESTİONS
           </h1>
         </div>
-        <p className="w-1/2 text-gray-500">Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it.</p>
+        <p className="w-1/2 text-gray-500">
+          Checkout Our Latest News And Articles</p>
       </motion.div>
 
       <div className='mt-6 flex flex-wrap gap-7'>
