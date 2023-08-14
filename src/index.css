@@ -276,3 +276,34 @@
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+
+@property --offset {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
+.underline-transition-tag {
+  text-underline-offset: var(--offset, 0.15rem);
+  text-decoration: underline 0.15rem;
+  transition: --offset 300ms, text-underline-offset 300ms;
+}
+
+.underline-transition-tag:hover {
+  text-decoration-color: rgb(255, 255, 255);
+  --offset: 0.3rem;
+}
+
+.animate-zoom {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}

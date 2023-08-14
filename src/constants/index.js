@@ -27,8 +27,52 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
+    id: "our-services",
+    title: "Our Services",
+  },
+  {
+    id: "contact-us",
     title: "Contact",
+  },
+];
+
+export const navbarDropdowns = [
+  {
+    title: "Media",
+    id: "mediaa",
+    options: [
+      {
+        id: "video",
+        label: "Video",
+        navigate: "/media/video",
+      },
+      {
+        id: "image",
+        label: "Image",
+        navigate: "/media/image",
+      },
+      {
+        id: "blog",
+        label: "Blog",
+        navigate: "/media/blog",
+      },
+    ],
+  },
+  {
+    title: "Module House",
+    id: "module-house",
+    options: [
+      {
+        id: "module-house",
+        label: "Module House",
+        navigate: "/module-house",
+      },
+      {
+        id: "our-module-house",
+        label: "Ours Module House",
+        navigate: "/module-house/ours",
+      },
+    ],
   },
 ];
 
@@ -172,7 +216,34 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const developments = [
+  {
+    name: "Tiny House",
+    description:
+      "İsteğinize göre her türlü ahşap küçük evleri mimarlarımızla tasarlayıp yapıyoruz. Çevreci ve doğa ile uyumlu, yeni yaşam ve konaklama ihtiyaçlarının dönüşümüne entegre olmuş bir yaşam birimi sunar. Özgürlüğünüzden taviz vermeden ev konforunuzu her yere taşıyabilmenizi sağlamaktayız.",
+    image: "./img/tiny-house.jpg",
+  },
+  {
+    name: "Architectural Projects",
+    description:
+      "Mimari tasarım projelerinizi gerçeğe dönüştürüyoruz! Adesa Home, mimari uygulama ve inşaat ekibi, anahtar teslim uygulamalar ve inşaat işleri başta olmak üzere projelendirme ve uygulama alanlarında müşterilerimize danışmanlık hizmeti vermektedir. Konsept projelerde özel üretim mobilya ve mobil mekanlar için gerekli prototip çalışmaları ile müşterilerimize yaratmayı hedefledikleri deneyimleri gerçek ölçeklerde test etme imkanı sağlıyoruz.",
+    image: "./img/arc-project.jpg",
+  },
+  {
+    name: "DOME Ev",
+    description:
+      "2014 yılından bu yana kubbe yapılar konusunda üretim yapmaktayız. Kubbe yapı mimarisi ve tekniklerini jeodezik yapılarımızda titizlikle uygulamaktayız. Profesyonel ekibimiz ve çözüm odaklı yaklaşımımız ile dome ihtiyacı olan herkesin her zaman yanındayız. Yeni nesil  dome imalatında Türkiye' nin alanında öncü ve örnek alınan firması olmaktan gurur duyuyoruz.",
+    image: "./img/dome.jpg",
+  },
+  {
+    name: "Cnc Hizmetlerimiz",
+    description:
+      "CNC ahşap tezgâhı ile kesme, yönlendirme, oyma, delme, taşlama gibi işlemleri yapmaktayız. CNC ahşap oyma makinemizle her türlü ahşap kesimini mükemmel kalitede yapmaktayız.",
+    image: "./img/cnc.jpg",
+  },
+];
+
+const faq = [
   {
     name: "How long is the life of Adesa Home Wood?",
     description:
@@ -302,4 +373,4 @@ const projects = [
   // },
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+export { developments, experiences, faq, services, technologies, testimonials };
