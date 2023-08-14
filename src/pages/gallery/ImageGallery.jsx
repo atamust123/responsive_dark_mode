@@ -48,27 +48,27 @@ export default function ImageGallery() {
 }
 
 const indoor = [
-  { src: "/img/gallery/inside/1.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/2.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/3.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/4.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/5.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/6.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/7.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/8.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/9.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/inside/10.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/1.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/2.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/3.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/4.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/5.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/6.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/7.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/8.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/9.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/inside/10.jpg", width: 1080, height: 1080 },
 ];
 
 const outdoor = [
-  { src: "/img/gallery/outside/1.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/2.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/3.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/3-1.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/4.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/4-1.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/5.jpg", width: 1080, height: 1080 },
-  { src: "/img/gallery/outside/6.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/1.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/2.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/3.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/3-1.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/4.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/4-1.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/5.jpg", width: 1080, height: 1080 },
+  { src: "/public/img/gallery/outside/6.jpg", width: 1080, height: 1080 },
 ];
 
 const whole = [...indoor, ...outdoor];
