@@ -11,10 +11,11 @@ import {
 import ModuleHouse from "./pages/moduleHouse/ModuleHouse";
 import OurServices from "./pages/ourServices/OurServices";
 import ImageGallery from "./pages/gallery/ImageGallery";
+import VideoGallery from "./pages/gallery/VideoGallery";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/responsive_dark_mode">
       <div className="relative z-0 bg-neutral-700">
         <Navbar />
         <Routes>
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/work" element={<Experience />} />
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/media/image" element={<ImageGallery />} />
+          <Route path="/media/video" element={<VideoGallery />} />
+
           <Route path="/" element={<Home />} />
         </Routes>
 

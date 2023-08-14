@@ -7,25 +7,6 @@ import {
   Hero,
   Tech,
 } from "./components";
-import { SlideGallery } from "./hoc";
-
-const slides = [
-  {
-    src: "./img/s1.jpg",
-    width: 720,
-    height: 720,
-  },
-  {
-    src: "./img/s2.jpg",
-    width: 720,
-    height: 720,
-  },
-  {
-    src: "./img/s3.jpg",
-    width: 720,
-    height: 720,
-  },
-];
 
 export default function Home() {
   return (
@@ -38,7 +19,6 @@ export default function Home() {
       <FAQ />
       <Feedbacks />
       {/* <GoogleMaps /> */}
-      <SlideGallery slides={slides} />
     </>
   );
 }
