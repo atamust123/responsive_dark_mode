@@ -1,3 +1,5 @@
+import { cv, s4 } from "../assets";
+
 const style = {
   marginLeft: "calc(0px - 27% )",
 };
@@ -13,7 +15,7 @@ const ArchitectureCompany = () => {
   return (
     <div className="flex mx-auto relative py-16 px-4" id="about-us">
       <div className="w-4/6">
-        <img src="/img/s4.jpg" className="m-auto" style={{ maxWidth: "90%" }} />
+        <img src={s4} className="m-auto" style={{ maxWidth: "90%" }} />
         <div className="flex justify-evenly m-auto pt-4">
           <div>
             <h1 className={`text-4xl text-white`}>345</h1>
@@ -55,7 +57,7 @@ const ArchitectureCompany = () => {
               <div className="flex items-center w-full h-full gap-4">
                 <img
                   style={profileStyle}
-                  src={"/img/cv.jpeg"}
+                  src={cv}
                   alt={"experience.company_name"}
                   className="object-contain"
                 />

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import { close, menu } from "../assets";
+import { adesa, close, menu } from "../assets";
 import { navLinks, navbarDropdowns } from "../constants";
 import { styles } from "../styles";
 import Dropdown from "../hoc/Dropdown";
@@ -54,7 +54,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={"/img/adesa.png"} alt="logo" className="w-36 h-12" />
+          <img src={adesa} alt="logo" className="w-36 h-12" />
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">

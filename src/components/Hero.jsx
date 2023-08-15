@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { styles } from "../styles";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { s1, s3, s2 } from "../assets";
 
 const Hero = () => {
   useEffect(() => {
@@ -24,18 +25,9 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div>
-        <img
-          className="mySlides animate-fading h-screen w-full"
-          src="/img/s1.jpg"
-        />
-        <img
-          className="mySlides animate-fading h-screen w-full"
-          src="/img/s2.jpg"
-        />
-        <img
-          className="mySlides animate-fading h-screen w-full"
-          src="/img/s2.jpg"
-        />
+        <img className="mySlides animate-fading h-screen w-full" src={s1} />
+        <img className="mySlides animate-fading h-screen w-full" src={s2} />
+        <img className="mySlides animate-fading h-screen w-full" src={s3} />
       </div>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto px-0 py-16 flex flex-row items-start gap-5`}
