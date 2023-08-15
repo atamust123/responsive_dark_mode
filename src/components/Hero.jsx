@@ -26,15 +26,15 @@ const Hero = () => {
       <div>
         <img
           className="mySlides animate-fading h-screen w-full"
-          src="./img/s1.jpg"
+          src="/public/img/s1.jpg"
         />
         <img
           className="mySlides animate-fading h-screen w-full"
-          src="./img/s2.jpg"
+          src="/public/img/s2.jpg"
         />
         <img
           className="mySlides animate-fading h-screen w-full"
-          src="./img/s2.jpg"
+          src="/public/img/s2.jpg"
         />
       </div>
       <div
