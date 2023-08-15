@@ -9,7 +9,7 @@ export default function VideoGallery() {
       <div>
         <img
           className="h-96 w-full"
-          src="/img/gallery/gallery-bg.jpg"
+          src="./img/gallery/gallery-bg.jpg"
           alt="bg--gallery-video"
         />
         <div className="absolute inset-0 top-[120px]  max-w-7xl px-0 py-16 flex flex-row items-start gap-5 h-fit">
