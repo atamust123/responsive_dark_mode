@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="flex p-16">
       <div className="w-1/2">
-        <img src={"./img/adesa.png"} alt="logo" className="w-36 h-12 mb-4" />
+        <img src={"/img/adesa.png"} alt="logo" className="w-36 h-12 mb-4" />
         <p className="text-gray-400">
           Working on the basis of customer satisfaction, technical and
           administrative personnel offer fast and quality solutions in line with

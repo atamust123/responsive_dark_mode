@@ -2,9 +2,9 @@ import { useState } from "react";
 import Modal from "../../hoc/Modal";
 
 const images = [
-  "./img/module-house-2.jpg",
-  "./img/module-house-3.jpg",
-  "./img/module-house-4.jpg",
+  "/img/module-house-2.jpg",
+  "/img/module-house-3.jpg",
+  "/img/module-house-4.jpg",
 ];
 
 export default function ModuleHouse() {
@@ -16,7 +16,7 @@ export default function ModuleHouse() {
       <div className="grid gap-4 grid-cols-2">
         <img
           className="h-full max-w-full rounded-lg cursor-pointer"
-          src={"./img/module-house-1.jpg"}
+          src={"/img/module-house-1.jpg"}
           onClick={() => setOpen(true)}
         />
         <div className="grid grid-cols-3 gap-4 grid-rows-none">

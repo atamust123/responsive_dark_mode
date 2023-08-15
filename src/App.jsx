@@ -19,14 +19,12 @@ const App = () => {
       <div className="relative z-0 bg-neutral-700">
         <Navbar />
         <Routes>
-          <Route path="/media/*" element={<div>asd</div>} />
-
           <Route path="/module-house" element={<ModuleHouse />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Experience />} />
           <Route path="/our-services" element={<OurServices />} />
-          <Route path="/media/image" element={<ImageGallery />} />
-          <Route path="/media/video" element={<VideoGallery />} />
+          <Route path="/media-image" element={<ImageGallery />} />
+          <Route path="/media-video" element={<VideoGallery />} />
 
           <Route path="/" element={<Home />} />
         </Routes>

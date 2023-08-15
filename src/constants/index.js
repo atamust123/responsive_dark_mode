@@ -44,17 +44,17 @@ export const navbarDropdowns = [
       {
         id: "video",
         label: "Video",
-        navigate: "/media/video",
+        navigate: "/media-video",
       },
       {
         id: "image",
         label: "Image",
-        navigate: "/media/image",
+        navigate: "/media-image",
       },
       {
         id: "blog",
         label: "Blog",
-        navigate: "/media/blog",
+        navigate: "/media-blog",
       },
     ],
   },
@@ -79,17 +79,17 @@ export const navbarDropdowns = [
 const services = [
   {
     title: "PLANNING",
-    icon: "./img/p1.png",
+    icon: "/img/p1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "CONSULTING",
-    icon: "./img/p2.png",
+    icon: "/img/p2.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
   {
     title: "ARCHITECTURE",
-    icon: "./img/p3.png",
+    icon: "/img/p3.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
   },
 ];
@@ -159,7 +159,7 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
     ],
-    img: "./img/s1.jpg",
+    img: "/img/s1.jpg",
   },
   {
     title: "Melbourne House",
@@ -171,7 +171,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "./img/s2.jpg",
+    img: "/img/s2.jpg",
   },
   {
     title: "Berlins House",
@@ -185,7 +185,7 @@ const experiences = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar",
     ],
-    img: "./img/s4.jpg",
+    img: "/img/s4.jpg",
   },
 ];
 
@@ -221,25 +221,25 @@ const developments = [
     name: "Tiny House",
     description:
       "İsteğinize göre her türlü ahşap küçük evleri mimarlarımızla tasarlayıp yapıyoruz. Çevreci ve doğa ile uyumlu, yeni yaşam ve konaklama ihtiyaçlarının dönüşümüne entegre olmuş bir yaşam birimi sunar. Özgürlüğünüzden taviz vermeden ev konforunuzu her yere taşıyabilmenizi sağlamaktayız.",
-    image: "./img/tiny-house.jpg",
+    image: "/img/tiny-house.jpg",
   },
   {
     name: "Architectural Projects",
     description:
       "Mimari tasarım projelerinizi gerçeğe dönüştürüyoruz! Adesa Home, mimari uygulama ve inşaat ekibi, anahtar teslim uygulamalar ve inşaat işleri başta olmak üzere projelendirme ve uygulama alanlarında müşterilerimize danışmanlık hizmeti vermektedir. Konsept projelerde özel üretim mobilya ve mobil mekanlar için gerekli prototip çalışmaları ile müşterilerimize yaratmayı hedefledikleri deneyimleri gerçek ölçeklerde test etme imkanı sağlıyoruz.",
-    image: "./img/arc-project.jpg",
+    image: "/img/arc-project.jpg",
   },
   {
     name: "DOME Ev",
     description:
       "2014 yılından bu yana kubbe yapılar konusunda üretim yapmaktayız. Kubbe yapı mimarisi ve tekniklerini jeodezik yapılarımızda titizlikle uygulamaktayız. Profesyonel ekibimiz ve çözüm odaklı yaklaşımımız ile dome ihtiyacı olan herkesin her zaman yanındayız. Yeni nesil  dome imalatında Türkiye' nin alanında öncü ve örnek alınan firması olmaktan gurur duyuyoruz.",
-    image: "./img/dome.jpg",
+    image: "/img/dome.jpg",
   },
   {
     name: "Cnc Hizmetlerimiz",
     description:
       "CNC ahşap tezgâhı ile kesme, yönlendirme, oyma, delme, taşlama gibi işlemleri yapmaktayız. CNC ahşap oyma makinemizle her türlü ahşap kesimini mükemmel kalitede yapmaktayız.",
-    image: "./img/cnc.jpg",
+    image: "/img/cnc.jpg",
   },
 ];
 
@@ -258,7 +258,7 @@ const faq = [
         color: "text-cyan-700",
       },
     ],
-    image: "./img/s5.jpg",
+    image: "/img/s5.jpg",
   },
   {
     name: "Does the wooden house rot?",
@@ -274,7 +274,7 @@ const faq = [
         color: "pink-text-gradient",
       },
     ],
-    image: "./img/rotten.jpg",
+    image: "/img/rotten.jpg",
   },
   {
     name: "Are tree houses earthquake resistant?",
@@ -290,7 +290,7 @@ const faq = [
         color: "green-text-gradient",
       },
     ],
-    image: "./img/j1.jpg",
+    image: "/img/j1.jpg",
   },
   {
     name: "How is tree house maintenance?",
@@ -306,7 +306,7 @@ const faq = [
         color: "pink-text-gradient",
       },
     ],
-    image: "./img/j2.jpg",
+    image: "/img/j2.jpg",
   },
   // {
   //   name: "Is Architecture A Good Career In 2022?",

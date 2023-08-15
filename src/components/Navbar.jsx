@@ -54,7 +54,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={"./img/adesa.png"} alt="logo" className="w-36 h-12" />
+          <img src={"/img/adesa.png"} alt="logo" className="w-36 h-12" />
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
