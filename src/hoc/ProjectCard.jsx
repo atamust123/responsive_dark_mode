@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { github } from "../assets";
 import { fadeIn } from "../utils/motion";
+import ButtonDefault from "./ButtonDefault";
 
 export default function ProjectCard({
   index,
@@ -10,9 +11,18 @@ export default function ProjectCard({
   tags,
   image,
   source_code_link,
+  buttonProps,
 }) {
+  const { title, ...rest } = buttonProps || {};
+  const defaultConditionalRender = () => {
+    return <ButtonDefault {...buttonProps} />;
+  };
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      onClick={rest.onClick}
+    >
       <Tilt
         tiltMaxAngleX={20}
         tiltMaxAngleY={20}
@@ -49,6 +59,8 @@ export default function ProjectCard({
             {description}
           </p>
         </div>
+
+        {title && defaultConditionalRender?.()}
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags?.map((tag) => (

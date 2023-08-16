@@ -12,6 +12,7 @@ import ModuleHouse from "./pages/moduleHouse/ModuleHouse";
 import OurServices from "./pages/ourServices/OurServices";
 import ImageGallery from "./pages/gallery/ImageGallery";
 import VideoGallery from "./pages/gallery/VideoGallery";
+import OurModules from "./pages/moduleHouse/OurModules";
 
 const App = () => {
   return (
@@ -19,12 +20,13 @@ const App = () => {
       <div className="relative z-0 bg-neutral-700">
         <Navbar />
         <Routes>
-          <Route path="/module-house" element={<ModuleHouse />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Experience />} />
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/media-image" element={<ImageGallery />} />
           <Route path="/media-video" element={<VideoGallery />} />
+          <Route path="/module-house" element={<ModuleHouse />} />
+          <Route path="/our-modules" element={<OurModules />} />
 
           <Route path="/" element={<Home />} />
         </Routes>

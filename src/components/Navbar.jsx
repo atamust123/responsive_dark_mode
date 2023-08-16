@@ -65,6 +65,7 @@ const Navbar = () => {
                 active === nav.title ? "text-white" : "text-secondary"
               } self-center hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={(e) => {
+                e.preventDefault();
                 setActive(nav.title);
                 if (location.pathname !== "/") {
                   return navigate(`/${nav.id}`);

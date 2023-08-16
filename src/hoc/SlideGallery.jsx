@@ -19,7 +19,7 @@ export default function SlideGallery({ slides }) {
       <PhotoAlbum
         layout="rows"
         photos={slides}
-        targetRowHeight={150}
+        targetRowHeight={250}
         onClick={({ index: current }) => setIndex(current)}
       />
       <Lightbox

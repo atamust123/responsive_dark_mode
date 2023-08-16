@@ -68,6 +68,42 @@ import in8 from "./img/gallery/inside/8.jpg";
 import in9 from "./img/gallery/inside/9.jpg";
 import in10 from "./img/gallery/inside/10.jpg";
 
+import bankIronMetal from "./img/products/bank-iron-metal.jpg";
+import bedroomPlus1 from "./img/products/bedroom-plus1.jpg";
+import bedroomPlus2 from "./img/products/bedroom-plus2.jpg";
+import bedroomPlus3 from "./img/products/bedroom-plus3.jpg";
+import cncKesim1 from "./img/products/cnc-kesim-1.jpg";
+import kutukMasa1 from "./img/products/kutuk-masa-resim.jpg";
+import masterBathroom1 from "./img/products/master-bathroom1.jpg";
+import masterBathroom2 from "./img/products/master-bathroom2.jpg";
+import masterBathroom3 from "./img/products/master-bathroom3.jpg";
+import moduleAquarium1 from "./img/products/module-aquarium1.jpg";
+import moduleAquarium2 from "./img/products/module-aquarium2.jpg";
+import moduleAquarium3 from "./img/products/module-aquarium3.jpg";
+import moduleBathroom1 from "./img/products/module-bathroom1.jpg";
+import moduleBathroom2 from "./img/products/module-bathroom2.jpg";
+import moduleBedroom1 from "./img/products/module-bedroom1.jpg";
+import moduleBedroom2 from "./img/products/module-bedroom2.jpg";
+import moduleBedroom3 from "./img/products/module-bedroom3.jpg";
+import moduleFront1 from "./img/products/module-front1.jpg";
+import moduleFront2 from "./img/products/module-front2.jpg";
+import moduleFront3 from "./img/products/module-front3.jpg";
+import moduleKitchen1 from "./img/products/module-kitchen1.jpg";
+import moduleKitchen2 from "./img/products/module-kitchen2.jpg";
+import moduleKitchen3 from "./img/products/module-kitchen3.jpg";
+import moduleLivingroom1 from "./img/products/module-livingroom1.jpg";
+import moduleLivingroom2 from "./img/products/module-livingroom2.jpg";
+import moduleLivingroom3 from "./img/products/module-livingroom3.jpg";
+import modulePatio1 from "./img/products/module-patio1.jpg";
+import modulePatio2 from "./img/products/module-patio2.jpg";
+import modulePatio3 from "./img/products/module-patio3.jpg";
+import moduleStandart1 from "./img/products/module-standart1.jpg";
+import moduleStandart2 from "./img/products/module-standart2.jpg";
+import moduleSstandart3 from "./img/products/module-standart3.jpg";
+import oaezlong15000tl from "./img/products/oaezlong15000tl.jpg";
+import sehpa from "./img/products/sehpa.jpg";
+import walnutLogTable from "./img/products/walnut-log-table.jpg";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -150,4 +186,39 @@ export {
   carrent,
   jobit,
   tripguide,
+  bankIronMetal,
+  bedroomPlus1,
+  bedroomPlus2,
+  bedroomPlus3,
+  cncKesim1,
+  kutukMasa1,
+  masterBathroom1,
+  masterBathroom2,
+  masterBathroom3,
+  moduleAquarium1,
+  moduleAquarium2,
+  moduleAquarium3,
+  moduleBathroom1,
+  moduleBathroom2,
+  moduleBedroom1,
+  moduleBedroom2,
+  moduleBedroom3,
+  moduleFront1,
+  moduleFront2,
+  moduleFront3,
+  moduleKitchen1,
+  moduleKitchen2,
+  moduleKitchen3,
+  moduleLivingroom1,
+  moduleLivingroom2,
+  moduleLivingroom3,
+  modulePatio1,
+  modulePatio2,
+  modulePatio3,
+  moduleStandart1,
+  moduleStandart2,
+  moduleSstandart3,
+  oaezlong15000tl,
+  sehpa,
+  walnutLogTable,
 };

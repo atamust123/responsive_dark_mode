@@ -27,7 +27,7 @@ export default function ImageGallery() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="relative w-full mx-auto p-20">
+    <section className="relative w-full mx-auto py-20 px-16">
       <div>
         <img className="h-96 w-full" src={galleryBg} alt="bg--gallery-photo" />
         <div className="absolute inset-0 top-[120px]  max-w-7xl px-0 py-16 flex flex-row items-start gap-5 h-fit">
