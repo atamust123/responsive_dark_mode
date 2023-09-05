@@ -1,23 +1,17 @@
-import {
-  About,
-  ArchitectureCompany,
-  Experience,
-  FAQ,
-  Feedbacks,
-  Hero,
-  Tech,
-} from "./components";
+import { About, Experience, FAQ, Feedbacks, Hero } from "./components";
+import MeetTheTeam from "./components/MeetTheTeam";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <ArchitectureCompany />
+      {/* <ArchitectureCompany /> */}
       <About />
       <Experience />
-      <Tech />
+      {/* <Tech /> */}
       <FAQ />
-      <Feedbacks />
+      <MeetTheTeam />
+      {/* <Feedbacks /> */}
       {/* <GoogleMaps /> */}
     </>
   );

@@ -1,33 +1,17 @@
-import { useEffect } from "react";
-import { styles } from "../styles";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { s1, s3, s2 } from "../assets";
+import { useNavigate } from "react-router-dom";
+import { home1, home2 } from "../assets";
+import { useSlide } from "../hooks/useSlide";
+import { styles } from "../styles";
 
 const Hero = () => {
-  useEffect(() => {
-    function carousel() {
-      const x = document.getElementsByClassName("mySlides");
-      for (let i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1;
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 9000);
-    }
-
-    let myIndex = 0;
-    carousel();
-  }, []);
-
+  useSlide();
+  const navigate = useNavigate();
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div>
-        <img className="mySlides animate-fading h-screen w-full" src={s1} />
-        <img className="mySlides animate-fading h-screen w-full" src={s2} />
-        <img className="mySlides animate-fading h-screen w-full" src={s3} />
+        <img className="mySlides animate-fading h-screen w-full" src={home1} />
+        <img className="mySlides animate-fading h-screen w-full" src={home2} />
       </div>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto px-0 py-16 flex flex-row items-start gap-5`}
@@ -45,14 +29,27 @@ const Hero = () => {
             Modern Building With High-Aesthetics.
           </h1>
 
-          <button className="bg-transparent border-solid border-2 border-black px-8 py-4">
+          {/* <button className="bg-transparent border-solid border-2 border-black px-8 py-4">
             <a
-              href="#portfolio"
+              href="#"
+              onClick={() => navigate("/our-modules")}
               className="underline underline-offset-1 flex items-center gap-4  "
             >
               VIEW PROJECT <HiArrowNarrowRight />
             </a>
-          </button>
+          </button> */}
+          <a
+            href="#_"
+            onClick={() => navigate("/our-modules")}
+            className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group"
+          >
+            <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+            <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-0"></span>
+            <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 flex items-center gap-4">
+              VIEW PROJECT <HiArrowNarrowRight />
+            </span>
+            <span className="absolute inset-0 border-2 border-white rounded-full"></span>
+          </a>
         </div>
       </div>
     </section>

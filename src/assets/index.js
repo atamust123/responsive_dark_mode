@@ -26,6 +26,8 @@ import arcProject from "./img/arc-project.jpg";
 import p1 from "./img/p1.png";
 import p2 from "./img/p2.png";
 import p3 from "./img/p3.png";
+import home1 from "./img/home1.jpg";
+import home2 from "./img/home2.jpg";
 import s1 from "./img/s1.jpg";
 import s2 from "./img/s2.jpg";
 import s3 from "./img/s3.jpg";
@@ -103,6 +105,17 @@ import moduleSstandart3 from "./img/products/module-standart3.jpg";
 import oaezlong15000tl from "./img/products/oaezlong15000tl.jpg";
 import sehpa from "./img/products/sehpa.jpg";
 import walnutLogTable from "./img/products/walnut-log-table.jpg";
+import tiny1 from "./img/tinyHouse/1.jpg";
+import tiny2 from "./img/tinyHouse/2.jpg";
+import tiny3 from "./img/tinyHouse/3.jpg";
+import tiny4 from "./img/tinyHouse/4.jpg";
+import tiny5 from "./img/tinyHouse/5.jpg";
+import tiny6 from "./img/tinyHouse/6.jpg";
+import tiny7 from "./img/tinyHouse/7.jpg";
+import tiny8 from "./img/tinyHouse/8.jpg";
+import tiny9 from "./img/tinyHouse/9.jpg";
+import tiny10 from "./img/tinyHouse/10.jpg";
+import tiny11 from "./img/tinyHouse/11.jpg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -112,8 +125,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import ADESA_HOME_KATALOG_FINAL from "./pdf/ADESA_HOME_KATALOG_FINAL.pdf";
+// import hills_video from "./video/hills_720p.mp4";
+import kanyon_video from "./video/Kanyon_720p.mp4";
 export {
+  ADESA_HOME_KATALOG_FINAL,
   adesa,
   arcProject,
   moduleHouse1,
@@ -121,6 +137,19 @@ export {
   moduleHouse3,
   moduleHouse4,
   galleryBg,
+  home1,
+  home2,
+  tiny1,
+  tiny2,
+  tiny3,
+  tiny4,
+  tiny5,
+  tiny6,
+  tiny7,
+  tiny8,
+  tiny9,
+  tiny10,
+  tiny11,
   in1,
   in2,
   in3,
@@ -221,4 +250,6 @@ export {
   oaezlong15000tl,
   sehpa,
   walnutLogTable,
+  // hills_video,
+  kanyon_video,
 };

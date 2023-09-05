@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import { faq } from "../constants";
-import { ProjectCard, SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../hoc";
+import Collapse from "../hoc/Collapse";
 import { textVariant } from "../utils/motion";
 
 const FAQ = () => {
@@ -23,9 +24,14 @@ const FAQ = () => {
         </p>
       </motion.div>
 
-      <div className="mt-6 flex flex-wrap gap-7">
+      <div className="mt-6 grid gap-y-6 gap-x-4">
         {faq.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <Collapse
+            button={{ title: project.name }}
+            id={project.name.replace(" ", "-")}
+          >
+            {project.description}
+          </Collapse>
         ))}
       </div>
     </>

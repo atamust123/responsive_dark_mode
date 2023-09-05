@@ -226,7 +226,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .proj-imgbx::before {

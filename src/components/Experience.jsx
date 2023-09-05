@@ -10,8 +10,11 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useSlide } from "../hooks/useSlide";
 
 export const ExperienceCard = ({ experience }) => {
+  const className = `slide-${experience?.title?.replace(" ", "-")}`;
+  const { fading } = useSlide(className);
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -22,36 +25,51 @@ export const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <a target="_blank" href="https://atamust123.github.io/portfolio/" className='text-white text-[24px] font-bold underline'>{experience.title}</a>
+        <a
+          target="_blank"
+          href="https://atamust123.github.io/portfolio/"
+          className="text-white text-[24px] font-bold underline"
+        >
+          {experience.title}
+        </a>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
           </li>
         ))}
       </ul>
-      <img src={experience.img} className="p-6" />
+      <div>
+        {experience?.img?.map((img) => (
+          <img
+            src={img}
+            className={`${className} ${fading} w-full p-6 h-auto`}
+            alt={img}
+            title={img}
+          />
+        ))}
+      </div>
     </VerticalTimelineElement>
   );
 };
@@ -64,16 +82,16 @@ const Experience = () => {
         <h1 className={`text-4xl text-white  mb-6 text-center`}>
           Work Experience.
         </h1>
-        <p className="text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
+        <p className="text-center text-gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar.
+        </p>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+          {experiences.map((experience) => (
+            <ExperienceCard experience={experience} />
           ))}
         </VerticalTimeline>
       </div>

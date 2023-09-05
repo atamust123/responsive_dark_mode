@@ -1,9 +1,7 @@
 import { useState } from "react";
-import SlideGallery from "../../hoc/SlideGallery";
-import { styles } from "../../styles";
 import {
-  galleryBg,
   in1,
+  in10,
   in2,
   in3,
   in4,
@@ -12,7 +10,7 @@ import {
   in7,
   in8,
   in9,
-  in10,
+  kanyon_video,
   out1,
   out2,
   out3,
@@ -22,21 +20,34 @@ import {
   out5,
   out6,
 } from "../../assets";
+import SlideGallery from "../../hoc/SlideGallery";
+import { styles } from "../../styles";
 
 export default function ImageGallery() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="relative w-full mx-auto py-20 px-16">
+    <section className="relative w-full">
       <div>
-        <img className="h-96 w-full" src={galleryBg} alt="bg--gallery-photo" />
+        {/* <img className="h-96 w-full" src={galleryBg} alt="bg--gallery-photo" />
         <div className="absolute inset-0 top-[120px]  max-w-7xl px-0 py-16 flex flex-row items-start gap-5 h-fit">
           <h1 className={`${styles.heroHeadText} text-white  mb-12  mx-auto`}>
             Photo Gallery
           </h1>
+        </div> */}
+
+        <video loop muted autoPlay className="w-full">
+          <source src={kanyon_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 top-[120px]  max-w-7xl py-12 px-8 flex flex-row items-start gap-5 h-fit">
+          <h1 className={`${styles.heroHeadText} text-white  mb-12  pl-8`}>
+            Photo Gallery
+          </h1>
         </div>
       </div>
-      <div>
+
+      <div className="mx-auto py-20 px-16">
         <ul className="list-none sm:flex flex-row gap-10 p-12 justify-center">
           {selectedPreferences.map((val) => (
             <li
