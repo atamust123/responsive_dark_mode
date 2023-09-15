@@ -1,13 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { adesa, close, menu } from "../assets";
 import { navLinks, navbarDropdowns } from "../constants";
-import { styles } from "../styles";
+import { LanguageContext } from "../context/LanguageContext";
 import Dropdown from "../hoc/Dropdown";
+import { styles } from "../styles";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
+  const { lang, handleLanguage, language } = useContext(LanguageContext);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
@@ -30,12 +32,14 @@ const Navbar = () => {
   const memoizedOpts = useMemo(() => {
     return navbarDropdowns.map((dropdown) => ({
       ...dropdown,
+      title: dropdown.title?.[lang],
       options: dropdown.options.map((opt) => ({
         ...opt,
+        label: opt.label?.[lang],
         onClick: () => navigate(opt.navigate),
       })),
     }));
-  }, []);
+  }, [lang]);
 
   return (
     <nav
@@ -62,39 +66,40 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title["en"] ? "text-white" : "text-secondary"
               } self-center hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={(e) => {
                 e.preventDefault();
-                setActive(nav.title);
+                setActive(nav.title["en"]);
                 if (location.pathname !== "/") {
                   return navigate(`/${nav.id}`);
                 }
               }}
             >
-              <a href={`${location.pathname === "/" ? "#" + nav.id : ""}`}>
-                {nav.title}
-              </a>
+              <a href={`#${nav.id}`}>{nav.title[lang]}</a>
             </li>
           ))}
-          {/* <li>
-            <button
-              type="button"
-              className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center  hover:shadow-md hover:shadow-cyan-500/50"
-            >
-              Store
-            </button>
-          </li> */}
           {memoizedOpts.map((dropdown) => {
             return (
               <li
                 className={"self-center h-fit group"}
                 key={`li-${dropdown?.id}`}
               >
-                <Dropdown active={active} {...dropdown} key={dropdown?.id} />
+                <Dropdown
+                  active={active}
+                  options={dropdown.options}
+                  title={dropdown.title}
+                  key={dropdown?.id}
+                />
               </li>
             );
           })}
+          <button
+            className="self-center text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+            onClick={handleLanguage}
+          >
+            {language}
+          </button>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -115,7 +120,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title["en"] ? "text-white" : "text-secondary"
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -123,11 +128,11 @@ const Navbar = () => {
                       return navigate(`/${nav.id}`);
                     }
                     setToggle((prev) => !prev);
-                    setActive(nav.title);
+                    setActive(nav.title["en"]);
                   }}
                 >
                   <a href={`#${location.pathname === "/" ? nav.id : ""}`}>
-                    {nav.title}
+                    {nav.title[lang]}
                   </a>
                 </li>
               ))}

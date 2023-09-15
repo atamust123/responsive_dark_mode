@@ -1,65 +1,54 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
+import close from "./close.svg";
 import creator from "./creator.png";
+import logo from "./logo.svg";
+import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
 import adesa from "./img/adesa.png";
 import arcProject from "./img/arc-project.jpg";
+import arko from "./img/arko.png";
+import aziz from "./img/aziz.jpg";
+import cnc from "./img/cnc.jpg";
+import cv from "./img/cv.jpeg";
+import doe from "./img/doe.jpg";
+import dome from "./img/dome.jpg";
+import home1 from "./img/home1.jpg";
+import home2 from "./img/home2.jpg";
+import j1 from "./img/j1.jpg";
+import j2 from "./img/j2.jpg";
+import j3 from "./img/j3.jpg";
+import moduleHouse1 from "./img/module-house-1.jpg";
+import moduleHouse2 from "./img/module-house-2.jpg";
+import moduleHouse3 from "./img/module-house-3.jpg";
+import moduleHouse4 from "./img/module-house-4.jpg";
 import p1 from "./img/p1.png";
 import p2 from "./img/p2.png";
 import p3 from "./img/p3.png";
-import home1 from "./img/home1.jpg";
-import home2 from "./img/home2.jpg";
+import rightArrow from "./img/right-arrow.png";
+import rotten from "./img/rotten.jpg";
 import s1 from "./img/s1.jpg";
 import s2 from "./img/s2.jpg";
 import s3 from "./img/s3.jpg";
 import s4 from "./img/s4.jpg";
 import s5 from "./img/s5.jpg";
-import j1 from "./img/j1.jpg";
-import j2 from "./img/j2.jpg";
-import j3 from "./img/j3.jpg";
-import arko from "./img/arko.png";
-import cnc from "./img/cnc.jpg";
-import cv from "./img/cv.jpeg";
-import doe from "./img/doe.jpg";
-import dome from "./img/dome.jpg";
 import tinyHouse from "./img/tiny-house.jpg";
-import rotten from "./img/rotten.jpg";
-import rightArrow from "./img/right-arrow.png";
-import moduleHouse1 from "./img/module-house-1.jpg";
-import moduleHouse2 from "./img/module-house-2.jpg";
-import moduleHouse3 from "./img/module-house-3.jpg";
-import moduleHouse4 from "./img/module-house-4.jpg";
+import ugur from "./img/ugur.jpg";
+import yusuf from "./img/yusuf.jpg";
 
 import galleryBg from "./img/gallery/gallery-bg.jpg";
-import out41 from "./img/gallery/outside/4-1.jpg";
-import out31 from "./img/gallery/outside/3-1.jpg";
 import out1 from "./img/gallery/outside/1.jpg";
 import out2 from "./img/gallery/outside/2.jpg";
+import out31 from "./img/gallery/outside/3-1.jpg";
 import out3 from "./img/gallery/outside/3.jpg";
+import out41 from "./img/gallery/outside/4-1.jpg";
 import out4 from "./img/gallery/outside/4.jpg";
 import out5 from "./img/gallery/outside/5.jpg";
 import out6 from "./img/gallery/outside/6.jpg";
 
 import in1 from "./img/gallery/inside/1.jpg";
+import in10 from "./img/gallery/inside/10.jpg";
 import in2 from "./img/gallery/inside/2.jpg";
 import in3 from "./img/gallery/inside/3.jpg";
 import in4 from "./img/gallery/inside/4.jpg";
@@ -68,7 +57,6 @@ import in6 from "./img/gallery/inside/6.jpg";
 import in7 from "./img/gallery/inside/7.jpg";
 import in8 from "./img/gallery/inside/8.jpg";
 import in9 from "./img/gallery/inside/9.jpg";
-import in10 from "./img/gallery/inside/10.jpg";
 
 import bankIronMetal from "./img/products/bank-iron-metal.jpg";
 import bedroomPlus1 from "./img/products/bedroom-plus1.jpg";
@@ -106,6 +94,8 @@ import oaezlong15000tl from "./img/products/oaezlong15000tl.jpg";
 import sehpa from "./img/products/sehpa.jpg";
 import walnutLogTable from "./img/products/walnut-log-table.jpg";
 import tiny1 from "./img/tinyHouse/1.jpg";
+import tiny10 from "./img/tinyHouse/10.jpg";
+import tiny11 from "./img/tinyHouse/11.jpg";
 import tiny2 from "./img/tinyHouse/2.jpg";
 import tiny3 from "./img/tinyHouse/3.jpg";
 import tiny4 from "./img/tinyHouse/4.jpg";
@@ -114,43 +104,36 @@ import tiny6 from "./img/tinyHouse/6.jpg";
 import tiny7 from "./img/tinyHouse/7.jpg";
 import tiny8 from "./img/tinyHouse/8.jpg";
 import tiny9 from "./img/tinyHouse/9.jpg";
-import tiny10 from "./img/tinyHouse/10.jpg";
-import tiny11 from "./img/tinyHouse/11.jpg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import ADESA_HOME_KATALOG_FINAL from "./pdf/ADESA_HOME_KATALOG_FINAL.pdf";
-// import hills_video from "./video/hills_720p.mp4";
 import kanyon_video from "./video/Kanyon_720p.mp4";
+import hills_video from "./video/hills_720p.webm";
+
+import eCatalogue from "./pdf/ADESA_HOME_KATALOG_FINAL.pdf";
+
 export {
-  ADESA_HOME_KATALOG_FINAL,
   adesa,
   arcProject,
-  moduleHouse1,
-  moduleHouse2,
-  moduleHouse3,
-  moduleHouse4,
+  arko,
+  aziz,
+  backend,
+  bankIronMetal,
+  bedroomPlus1,
+  bedroomPlus2,
+  bedroomPlus3,
+  close,
+  cnc,
+  cncKesim1,
+  creator,
+  cv,
+  doe,
+  dome,
+  eCatalogue,
   galleryBg,
+  hills_video,
   home1,
   home2,
-  tiny1,
-  tiny2,
-  tiny3,
-  tiny4,
-  tiny5,
-  tiny6,
-  tiny7,
-  tiny8,
-  tiny9,
-  tiny10,
-  tiny11,
   in1,
+  in10,
   in2,
   in3,
   in4,
@@ -159,71 +142,17 @@ export {
   in7,
   in8,
   in9,
-  in10,
-  out41,
-  out31,
-  out1,
-  out2,
-  out3,
-  out4,
-  out5,
-  out6,
   j1,
   j2,
   j3,
-  arko,
-  cnc,
-  cv,
-  doe,
-  dome,
-  p1,
-  p2,
-  p3,
-  s1,
-  s2,
-  s3,
-  s4,
-  s5,
-  tinyHouse,
-  rotten,
-  rightArrow,
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  bankIronMetal,
-  bedroomPlus1,
-  bedroomPlus2,
-  bedroomPlus3,
-  cncKesim1,
+  kanyon_video,
   kutukMasa1,
+  logo,
   masterBathroom1,
   masterBathroom2,
   masterBathroom3,
+  menu,
+  mobile,
   moduleAquarium1,
   moduleAquarium2,
   moduleAquarium3,
@@ -235,6 +164,10 @@ export {
   moduleFront1,
   moduleFront2,
   moduleFront3,
+  moduleHouse1,
+  moduleHouse2,
+  moduleHouse3,
+  moduleHouse4,
   moduleKitchen1,
   moduleKitchen2,
   moduleKitchen3,
@@ -244,12 +177,43 @@ export {
   modulePatio1,
   modulePatio2,
   modulePatio3,
+  moduleSstandart3,
   moduleStandart1,
   moduleStandart2,
-  moduleSstandart3,
   oaezlong15000tl,
+  out1,
+  out2,
+  out3,
+  out31,
+  out4,
+  out41,
+  out5,
+  out6,
+  p1,
+  p2,
+  p3,
+  rightArrow,
+  rotten,
+  s1,
+  s2,
+  s3,
+  s4,
+  s5,
   sehpa,
+  tiny1,
+  tiny10,
+  tiny11,
+  tiny2,
+  tiny3,
+  tiny4,
+  tiny5,
+  tiny6,
+  tiny7,
+  tiny8,
+  tiny9,
+  tinyHouse,
+  ugur,
   walnutLogTable,
-  // hills_video,
-  kanyon_video,
+  web,
+  yusuf,
 };

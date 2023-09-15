@@ -21,6 +21,9 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      height: {
+        35: "35rem",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],

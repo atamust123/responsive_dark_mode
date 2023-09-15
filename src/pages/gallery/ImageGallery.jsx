@@ -1,31 +1,14 @@
-import { useState } from "react";
-import {
-  in1,
-  in10,
-  in2,
-  in3,
-  in4,
-  in5,
-  in6,
-  in7,
-  in8,
-  in9,
-  kanyon_video,
-  out1,
-  out2,
-  out3,
-  out31,
-  out4,
-  out41,
-  out5,
-  out6,
-} from "../../assets";
+import { useContext, useState } from "react";
+import { kanyon_video } from "../../assets";
+import { photoGallery } from "../../constants";
 import SlideGallery from "../../hoc/SlideGallery";
 import { styles } from "../../styles";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export default function ImageGallery() {
+  const { lang } = useContext(LanguageContext);
   const [selected, setSelected] = useState(0);
-
+  const { selectedPreferences, title } = photoGallery || {};
   return (
     <section className="relative w-full">
       <div>
@@ -42,7 +25,7 @@ export default function ImageGallery() {
         </video>
         <div className="absolute inset-0 top-[120px]  max-w-7xl py-12 px-8 flex flex-row items-start gap-5 h-fit">
           <h1 className={`${styles.heroHeadText} text-white  mb-12  pl-8`}>
-            Photo Gallery
+            {title[lang]}
           </h1>
         </div>
       </div>
@@ -63,7 +46,7 @@ export default function ImageGallery() {
               }}
             >
               <a href="#" className="underline-transition-tag">
-                {val.title}
+                {val.title[lang]}
               </a>
             </li>
           ))}
@@ -74,35 +57,3 @@ export default function ImageGallery() {
     </section>
   );
 }
-
-const indoor = [
-  { src: in1, width: 1080, height: 1080 },
-  { src: in2, width: 1080, height: 1080 },
-  { src: in3, width: 1080, height: 1080 },
-  { src: in4, width: 1080, height: 1080 },
-  { src: in5, width: 1080, height: 1080 },
-  { src: in6, width: 1080, height: 1080 },
-  { src: in7, width: 1080, height: 1080 },
-  { src: in8, width: 1080, height: 1080 },
-  { src: in9, width: 1080, height: 1080 },
-  { src: in10, width: 1080, height: 1080 },
-];
-
-const outdoor = [
-  { src: out1, width: 1080, height: 1080 },
-  { src: out2, width: 1080, height: 1080 },
-  { src: out3, width: 1080, height: 1080 },
-  { src: out31, width: 1080, height: 1080 },
-  { src: out4, width: 1080, height: 1080 },
-  { src: out41, width: 1080, height: 1080 },
-  { src: out5, width: 1080, height: 1080 },
-  { src: out6, width: 1080, height: 1080 },
-];
-
-const whole = [...indoor, ...outdoor];
-
-const selectedPreferences = [
-  { id: 0, key: "whole", title: "Whole Renders", slides: whole },
-  { id: 1, key: "indoor", title: "Indoor Renders", slides: indoor },
-  { id: 2, key: "outdoor", title: "Outdoor Renders", slides: outdoor },
-];

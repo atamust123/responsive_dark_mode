@@ -1,39 +1,39 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
 import { meetTheTeam } from "../constants";
+import { LanguageContext } from "../context/LanguageContext";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { ProjectCard } from "./About";
 
 const MeetTheTeam = () => {
+  const { lang } = useContext(LanguageContext);
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h6 className="text-orange-300">MEET THE TEAM</h6>
-        <h1 className="text-4xl text-white">OUR TEAM.</h1>
+        <h6 className="text-orange-300 text-center mb-4">
+          {meetTheTeam.title[lang]}
+        </h6>
+        <h1 className="text-4xl text-white text-center">
+          {meetTheTeam.subTitle[lang]}
+        </h1>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] leading-[30px]"
       >
-        Meet the team of our estate agency! Our team is composed of experienced
-        and dedicated professionals who are passionate about helping people find
-        their dream homes. Our agents have extensive knowledge of the local real
-        estate market and are committed to providing exceptional service to our
-        clients. From finding the perfect property to negotiating the best deal,
-        our team is here to guide you every step of the way. We pride ourselves
-        on our integrity, professionalism, and commitment to our clients. Get in
-        touch with us today to learn more about how we can help you with your
-        real estate needs
+        {meetTheTeam.desc[lang]}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-20">
-        {meetTheTeam.map((service) => (
+        {meetTheTeam.members.map((service) => (
           <ProjectCard
             description={service.desc}
             imgUrl={service.icon}
             title={service.title}
             key={service.title}
+            className={{ img: "p-0" }}
           />
         ))}
       </div>

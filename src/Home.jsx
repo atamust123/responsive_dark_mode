@@ -1,4 +1,4 @@
-import { About, Experience, FAQ, Feedbacks, Hero } from "./components";
+import { About, Experience, FAQ, Hero } from "./components";
 import MeetTheTeam from "./components/MeetTheTeam";
 
 export default function Home() {

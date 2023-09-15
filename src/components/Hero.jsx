@@ -1,18 +1,28 @@
+import { useContext } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
-import { home1, home2 } from "../assets";
+import { hills_video, home1, home2 } from "../assets";
+import { mainPage } from "../constants";
+import { LanguageContext } from "../context/LanguageContext";
 import { useSlide } from "../hooks/useSlide";
 import { styles } from "../styles";
 
 const Hero = () => {
   useSlide();
   const navigate = useNavigate();
+  const { lang } = useContext(LanguageContext);
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <div>
+      <div className="lg:invisible md:hidden">
         <img className="mySlides animate-fading h-screen w-full" src={home1} />
         <img className="mySlides animate-fading h-screen w-full" src={home2} />
       </div>
+
+      <video loop muted autoPlay className="w-full max-lg::invisible">
+        <source src={hills_video} type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto px-0 py-16 flex flex-row items-start gap-5`}
       >
@@ -23,21 +33,11 @@ const Hero = () => {
 
         <div className="w-2/3">
           <h6 className="underline underline-offset-1 text-orange-300 mb-12">
-            ARCHITECTURE COMPANY
+            {mainPage.title[lang]}
           </h6>
           <h1 className={`${styles.heroHeadText} text-white  mb-12`}>
-            Modern Building With High-Aesthetics.
+            {mainPage.subtitle[lang]}
           </h1>
-
-          {/* <button className="bg-transparent border-solid border-2 border-black px-8 py-4">
-            <a
-              href="#"
-              onClick={() => navigate("/our-modules")}
-              className="underline underline-offset-1 flex items-center gap-4  "
-            >
-              VIEW PROJECT <HiArrowNarrowRight />
-            </a>
-          </button> */}
           <a
             href="#_"
             onClick={() => navigate("/our-modules")}
@@ -46,7 +46,7 @@ const Hero = () => {
             <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
             <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-0"></span>
             <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 flex items-center gap-4">
-              VIEW PROJECT <HiArrowNarrowRight />
+              {mainPage.button[lang]} <HiArrowNarrowRight />
             </span>
             <span className="absolute inset-0 border-2 border-white rounded-full"></span>
           </a>

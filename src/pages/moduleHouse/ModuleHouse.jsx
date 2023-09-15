@@ -1,20 +1,25 @@
-import { useState } from "react";
-import Modal from "../../hoc/Modal";
+import { useContext, useState } from "react";
 import {
   moduleHouse1,
   moduleHouse2,
   moduleHouse3,
   moduleHouse4,
 } from "../../assets";
+import { moduleHouse } from "../../constants";
+import { LanguageContext } from "../../context/LanguageContext";
+import Modal from "../../hoc/Modal";
 
 const images = [moduleHouse2, moduleHouse3, moduleHouse4];
 
 export default function ModuleHouse() {
+  const { lang } = useContext(LanguageContext);
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(images[0]);
   return (
     <section className="relative w-full mx-auto p-20">
-      <h1 className={`text-4xl text-white  mb-12 text-center`}>Module House</h1>
+      <h1 className={`text-4xl text-white  mb-12 text-center`}>
+        {moduleHouse.title[lang]}
+      </h1>
       <div className="grid gap-4 grid-cols-2">
         <img
           className="h-full max-w-full rounded-lg cursor-pointer"
@@ -44,15 +49,9 @@ export default function ModuleHouse() {
       </div>
       <div className="pt-8 w-4/6 text-center m-auto">
         <h6 className="underline underline-offset-1 text-orange-300 mb-3">
-          Create the tiny house of your dreams
+          {moduleHouse.subtitle[lang]}
         </h6>
-        <p className="text-gray-400">
-          Our modular tiny house system gives you the freedom to create the
-          living space of your dreams. You can purchase areas such as kitchen,
-          bathroom, living room and bedroom piece by piece according to your
-          needs and tastes. Thus, you can create a unique and personalized
-          living space.
-        </p>
+        <p className="text-gray-400">{moduleHouse.desc[lang]}</p>
       </div>
 
       <Modal onHide={setOpen} open={open}>
