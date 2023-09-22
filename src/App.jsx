@@ -12,7 +12,7 @@ import OurServices from "./pages/ourServices/OurServices";
 const App = () => {
   // ending with "/" is important basename in browser router when user clicks on the logo
   return (
-    <BrowserRouter basename="/responsive_dark_mode/">
+    <BrowserRouter basename="/">
       <LanguageProvider>
         <div className="relative z-0 bg-neutral-700">
           <Navbar />
