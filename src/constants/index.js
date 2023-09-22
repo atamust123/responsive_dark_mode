@@ -556,7 +556,7 @@ const slides = [
 const contactInfo = {
   contactUs: { tr: "BİZE ULAŞ", en: "CONTACT US" },
   tel: "+90 549 505 19 90",
-  address: "Demirtaş mahallesi İnönü Caddesi No:143/1 Bursa/Osmangazi",
+  address: "Demirtaş mahallesi İnönü Caddesi No:143/1 Bursa / Osmangazi",
   mail: "info@adesahome.com",
   desc: {
     tr: "Müşteri memnuniyeti esasıyla çalışan teknik ve idari kadromuzla, müşteri ihtiyaçları doğrultusunda hızlı ve kaliteli çözümler üretmekteyiz.",

@@ -23,6 +23,7 @@ module.exports = {
       },
       height: {
         35: "35rem",
+        calcMax: "max(100vh, 100%)",
       },
     },
   },

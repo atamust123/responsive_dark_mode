@@ -71,9 +71,7 @@ const Navbar = () => {
               onClick={(e) => {
                 e.preventDefault();
                 setActive(nav.title["en"]);
-                if (location.pathname !== "/") {
-                  return navigate(`/${nav.id}`);
-                }
+                navigate(`/${nav.id}`);
               }}
             >
               <a href={`#${nav.id}`}>{nav.title[lang]}</a>

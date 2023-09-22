@@ -7,8 +7,8 @@ import { LanguageContext } from "../context/LanguageContext";
 const ContactUs = () => {
   const { lang } = useContext(LanguageContext);
   return (
-    <div className="flex p-16">
-      <div className="w-1/2">
+    <div className="flex p-16 max-md:grid max-md:gap-8">
+      <div className="w-1/2 max-md:w-auto">
         <img src={adesa} alt="logo" className="w-36 h-12 mb-4" />
         <p className="text-gray-400">{contactInfo?.desc[lang]}</p>
         <div className="flex gap-3 mt-4">
@@ -26,7 +26,7 @@ const ContactUs = () => {
           />
         </div>
       </div>
-      <div className="w-1/2 flex flex-row">
+      <div className="w-1/2 flex flex-row max-md:w-auto">
         <div className="w-1/2">
           <h6 className="text-end underline underline-offset-1 text-orange-300 ">
             {contactInfo.navigaton[lang]}
@@ -58,7 +58,9 @@ const ContactUs = () => {
             </li>
             <li className="mt-4 w-full ml-auto">{contactInfo.address}</li>
             <li className="mt-4">
-              <a href={`mailto:${contactInfo.mail}`}>{contactInfo.mail}</a>
+              <a className="line-clamp-3" href={`mailto:${contactInfo.mail}`}>
+                {contactInfo.mail}
+              </a>
             </li>
           </ul>
         </div>

@@ -12,13 +12,13 @@ const Hero = () => {
   const navigate = useNavigate();
   const { lang } = useContext(LanguageContext);
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-calcMax mx-auto`}>
       <div className="lg:invisible md:hidden">
         <img className="mySlides animate-fading h-screen w-full" src={home1} />
         <img className="mySlides animate-fading h-screen w-full" src={home2} />
       </div>
 
-      <video loop muted autoPlay className="w-full max-lg::invisible">
+      <video loop muted autoPlay className="w-full max-lg:hidden">
         <source src={hills_video} type="video/webm" />
         Your browser does not support the video tag.
       </video>
