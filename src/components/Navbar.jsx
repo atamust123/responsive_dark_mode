@@ -122,9 +122,7 @@ const Navbar = () => {
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
-                    if (location.pathname !== "/") {
-                      return navigate(`/${nav.id}`);
-                    }
+                    navigate(`/${nav.id}`);
                     setToggle((prev) => !prev);
                     setActive(nav.title["en"]);
                   }}

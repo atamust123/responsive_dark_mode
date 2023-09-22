@@ -21,6 +21,7 @@ export default function ProjectCard({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       onClick={rest.onClick}
+      className="sm:w-[360px] w-full"
     >
       <Tilt
         tiltMaxAngleX={20}

@@ -10,7 +10,7 @@ export default function OurServices() {
       <h1 className={`text-4xl text-white  mb-12 text-center`}>
         {ourServices.title[lang]}
       </h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-1 max-xl:grid-cols-2">
         {ourServices.developments.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
