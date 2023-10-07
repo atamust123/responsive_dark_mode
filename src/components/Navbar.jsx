@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { adesa, close, menu } from "../assets";
-import { navLinks, navbarDropdowns } from "../constants";
+import { extendedNavLinks, navLinks, navbarDropdowns } from "../constants";
 import { LanguageContext } from "../context/LanguageContext";
 import Dropdown from "../hoc/Dropdown";
 import { styles } from "../styles";
@@ -114,7 +114,7 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-              {navLinks.map((nav) => (
+              {extendedNavLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${

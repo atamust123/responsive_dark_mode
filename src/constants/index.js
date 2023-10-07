@@ -82,6 +82,12 @@ export const navLinks = [
   },
 ];
 
+export const extendedNavLinks = [
+  ...navLinks,
+  { id: "module-house", title: { tr: "Modül Ev", en: "Module House" } },
+  { id: "our-modules", title: { tr: "Modüllerimiz", en: "Our Modules" } },
+];
+
 export const navbarDropdowns = [
   {
     title: { tr: "Galeri", en: "Gallery" },
@@ -371,6 +377,7 @@ const faq = {
   ],
 };
 
+/**our modules  */
 const slides = [
   {
     src: [moduleStandart1, moduleStandart2, moduleSstandart3],

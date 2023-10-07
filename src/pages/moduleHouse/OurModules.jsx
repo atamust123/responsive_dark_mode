@@ -33,8 +33,8 @@ export default function OurModules() {
         </div>
       </div>
 
-      <div className="grid grid-cols-6 gap-2 mt-4 mx-auto pt-20 px-16">
-        <div className="grid  col-start-1 col-end-6 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-4 ">
+      <div className="grid gap-2 grid-cols-3 mt-4 mx-auto pt-20 px-16 max-sm:grid-cols-1 max-xl:pl-0 max-lg:grid-cols-3">
+        <div className="grid grid-cols-2 col-span-2 max-lg:grid-cols-1 gap-4 max-sm:order-last max-lg:col-span-2">
           {slides.map((slide) => {
             return (
               <ProjectCard

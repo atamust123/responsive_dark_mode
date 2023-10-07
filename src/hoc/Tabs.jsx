@@ -8,8 +8,8 @@ import { Fragment, useState } from "react";
 export const Tabs = ({ options }) => {
   const [active, setActive] = useState(options?.[0].id);
   return (
-    <div className="sticky h-max top-24 max-w-lg mx-auto w-max ">
-      <div className="bg-tertiary border-b rounded-t-2xl">
+    <div className="sticky h-max top-24 max-w-lg mx-auto w-max max-sm:static">
+      <div className="bg-tertiary border-b rounded-t-2xl w-64">
         <label className="inline-block w-full px-4 py-3 text-center cursor-pointer">
           Categories
         </label>

@@ -20,6 +20,7 @@ const Hero = () => {
 
       <video loop muted autoPlay className="w-full max-lg:hidden">
         <source src={hills_video} type="video/webm" />
+        <source src={hills_video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

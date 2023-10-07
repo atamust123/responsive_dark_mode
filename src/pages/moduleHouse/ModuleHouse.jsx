@@ -20,7 +20,7 @@ export default function ModuleHouse() {
       <h1 className={`text-4xl text-white  mb-12 text-center`}>
         {moduleHouse.title[lang]}
       </h1>
-      <div className="grid gap-4 grid-cols-2">
+      <div className="grid gap-4 grid-cols-2 max-md:grid-cols-1">
         <img
           className="h-full max-w-full rounded-lg cursor-pointer"
           src={moduleHouse1}
