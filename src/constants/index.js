@@ -86,6 +86,8 @@ export const extendedNavLinks = [
   ...navLinks,
   { id: "module-house", title: { tr: "Modül Ev", en: "Module House" } },
   { id: "our-modules", title: { tr: "Modüllerimiz", en: "Our Modules" } },
+  { id: "media-image", title: { tr: "Fotoğraf", en: "Photo" } },
+  { id: "media-catalogue", title: { tr: "E-Katalog", en: "E-Catalogue" } },
 ];
 
 export const navbarDropdowns = [
