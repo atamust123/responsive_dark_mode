@@ -50,4 +50,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         with:
-          cname: adesahome.com
+          cname: yfnesil.com.tr
